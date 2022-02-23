@@ -14,23 +14,23 @@ export function ResearchScreen({ navigation }: any) {
   }
 
   return (
-    <View>
+    <View style={styles.container}>
       <View>
         <Headline>Rechercher des paroles</Headline>
       </View>
       <View>
         <TextInput
-          placeholder="Artiste"
-          placeholderTextColor="black"
-          /*style={styles.input}*/
+          selectionColor="black"
+          placeholder="Entrer le nom de l'artiste"
+          style={styles.input}
           autoComplete={true}
           value={artist}
           onChangeText={(text) => setArtist(text)}
         />
         <TextInput
-          placeholder="Titre"
-          placeholderTextColor="black"
-          /*style={styles.input}*/
+          selectionColor="black"
+          placeholder="Entrer le titre de la chanson"
+          style={styles.input}
           autoComplete={true}
           value={title}
           onChangeText={(text) => setTitle(text)}
@@ -40,3 +40,18 @@ export function ResearchScreen({ navigation }: any) {
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: "white",
+    flex: 1,
+  },
+  input: {
+    borderTopRightRadius: 20,
+    height: 40,
+    margin: 12,
+    borderWidth: 1,
+    padding: 10,
+    backgroundColor: "white",
+  },
+});
