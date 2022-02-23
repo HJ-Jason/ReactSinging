@@ -4,6 +4,9 @@ A simple mobile application which allow you to find the lyrics of a song.
 # Getting Started:
 ➞ yarn start
 
+# API used :
+➞ https://lyricsovh.docs.apiary.io/#
+
 # To test my application :
 
 ➞ Download Expo Go on your phone.
