@@ -10,8 +10,16 @@ export function MyStack() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Research" component={ResearchScreen} />
-        <Stack.Screen name="Lyrics" component={LyricsScreen} />
+        <Stack.Screen
+          options={{ title: "Accueil" }}
+          name="Research"
+          component={ResearchScreen}
+        />
+        <Stack.Screen
+          options={{ title: "Paroles" }}
+          name="Lyrics"
+          component={LyricsScreen}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
