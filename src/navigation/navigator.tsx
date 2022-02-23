@@ -16,7 +16,7 @@ export function MyStack() {
           component={ResearchScreen}
         />
         <Stack.Screen
-          options={{ title: "Paroles" }}
+          options={{ title: "🎵 Paroles 🎵" }}
           name="Lyrics"
           component={LyricsScreen}
         />
