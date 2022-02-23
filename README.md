@@ -13,3 +13,4 @@ A simple mobile application which allow you to find the lyrics of a song.
 ➞ Scan the QR code.
 
 ➞ Enjoy testing !
+  (Be carefull you have to write exactly the complete name of the artist and the complete title)
