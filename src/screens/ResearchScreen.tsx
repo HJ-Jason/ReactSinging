@@ -10,7 +10,7 @@ export function ResearchScreen({ navigation }: any) {
   const [title, setTitle] = React.useState("");
 
   function navigateToLyrics() {
-    navigation.navigate(Routes.LYRICS_SCREEN);
+    navigation.navigate(Routes.LYRICS_SCREEN, { artist, title });
   }
 
   return (
