@@ -8,7 +8,7 @@ A simple mobile application which allow you to find the lyrics of a song.
 
 ➞ Download Expo Go on your phone.
 
-➞ Go on the page of my application https://expo.dev/@jason.h/LyricsApp.
+➞ Go on the page of my application https://expo.dev/@jason.h/LyricsApp?serviceType=classic&distribution=expo-go.
 
 ➞ Scan the QR code.
 
