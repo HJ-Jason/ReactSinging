@@ -12,10 +12,33 @@ export const LyricsScreen = (props: {
   const { isLoading, isError, data } = useLyrics(artist, title);
 
   if (isLoading) {
-    return <Text>loading</Text>;
+    return (
+      <SafeAreaView /*style={styles.safeContainer}*/>
+        <Card style={styles.error}>
+          <Card.Content>
+            <ScrollView>
+              <Text style={styles.texterror}>⌛ Chargement ⌛</Text>
+            </ScrollView>
+          </Card.Content>
+        </Card>
+      </SafeAreaView>
+    );
   }
   if (isError) {
-    return <Text>Error</Text>;
+    return (
+      <SafeAreaView /*style={styles.safeContainer}*/>
+        <Card style={styles.error}>
+          <Card.Content>
+            <ScrollView>
+              <Text style={styles.texterror}>
+                ❌ Cette musique n'existe pas ou il y a une erreur dans
+                l'orthographe ! ❌
+              </Text>
+            </ScrollView>
+          </Card.Content>
+        </Card>
+      </SafeAreaView>
+    );
   }
 
   return (
@@ -37,5 +60,15 @@ const styles = StyleSheet.create({
   },
   cardtext: {
     textAlign: "center",
+  },
+  error: {
+    padding: "10%",
+    marginTop: "50%",
+    marginLeft: "10%",
+    marginRight: "10%",
+  },
+  texterror: {
+    textAlign: "center",
+    justifyContent: "center",
   },
 });
