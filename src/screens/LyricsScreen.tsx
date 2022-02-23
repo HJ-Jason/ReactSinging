@@ -20,10 +20,10 @@ export const LyricsScreen = (props: {
 
   return (
     <SafeAreaView /*style={styles.safeContainer}*/>
-      <Card>
+      <Card style={styles.card}>
         <Card.Content>
           <ScrollView>
-            <Text>{data.lyrics}</Text>
+            <Text style={styles.cardtext}>{data.lyrics}</Text>
           </ScrollView>
         </Card.Content>
       </Card>
@@ -31,4 +31,11 @@ export const LyricsScreen = (props: {
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  card: {
+    margin: 15,
+  },
+  cardtext: {
+    textAlign: "center",
+  },
+});
