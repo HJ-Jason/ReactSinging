@@ -23,7 +23,7 @@ A simple mobile application which allow you to find the lyrics of a song.
 
 ➞ Loading screen :
 
-![Screenshot_20220223_162940_host exp exponent](https://user-images.githubusercontent.com/91078780/155351593-6000868a-7718-44ab-b893-a4cea71391db.jpg)
+![Screenshot_20220223_163543_host exp exponent](https://user-images.githubusercontent.com/91078780/155352460-60dccec2-e6eb-4f5f-89f6-0aed1c6caab3.jpg)
 
 ➞ Lyrics screen :
 
